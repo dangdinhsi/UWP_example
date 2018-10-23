@@ -8,21 +8,21 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="Azure">
 <StackPanel Orientation="Vertical">
 <StackPanel Height="100" Orientation="Horizontal">
-<AppBarButton Margin="20,20,0,0" Icon="Back" HorizontalAlignment="Center" VerticalAlignment="Center"></AppBarButton>
+<AppBarButton x:ConnectionId='8' Margin="20,20,0,0" Icon="Back" HorizontalAlignment="Center"                  VerticalAlignment="Center"></AppBarButton>
     <TextBlock Margin="30,0,0,0" Width="900" FontSize="60" Text="Photo Gallery" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
 </StackPanel>
     <StackPanel Height="900" Orientation="Vertical" >
-                <Button x:ConnectionId='2' Margin="90" Content="Get Photo"                    ></Button>
-        <TextBox Height="50" Margin="30,-100,0,0" Width="200" HorizontalAlignment="Left"></TextBox>
+                <Button x:ConnectionId='2' Margin="80" Content="Get Photo"                    ></Button>
+        <TextBox x:ConnectionId='3' Name="txtName1" Height="50" Margin="30,-100,0,0" Width="200" HorizontalAlignment="Left"></TextBox>
         <StackPanel Orientation="Horizontal">
-            <Image Width="800" Height="450" Source="../Assets/LockScreenLogo.png"></Image>
+            <Image x:ConnectionId='4' x:Name="img" Width="800" Height="450" Source="../Assets/LockScreenLogo.png"></Image>
             <StackPanel Orientation="Vertical" Height="Auto">
-                <TextBox Header="File Name:" Width="300"></TextBox>
-                        <TextBox x:ConnectionId='3' x:Name="ImageUrl" Header="Path:" Width="300"></TextBox>
-                <TextBox x:ConnectionId='4' x:Name="MyAvatar" Header="Date created" Width="300"></TextBox>
+                <TextBox x:ConnectionId='5' Name="txtName2" Header="File Name:" Width="300"></TextBox>
+                 <TextBox x:ConnectionId='6'  x:Name="path" Header="Path:" Width="300"></TextBox>
+                <TextBox x:ConnectionId='7' x:Name="createdAt" Header="Date created" Width="300"></TextBox>
             </StackPanel>
                 </StackPanel>
         

@@ -5,10 +5,13 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Media.Capture;
 using Windows.Storage;
+using Windows.Storage.Pickers;
+using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,8 +30,6 @@ namespace ThiUWP_23102018.Views
     /// </summary>
     public sealed partial class View_Gallery : Page
     {
-        private static StorageFile file;
-        private static string UploadUrl;
         public View_Gallery()
         {
             this.InitializeComponent();
@@ -36,17 +37,45 @@ namespace ThiUWP_23102018.Views
 
         private async void btn_capture(object sender, RoutedEventArgs e)
         {
-            CameraCaptureUI captureUI = new CameraCaptureUI();
-            captureUI.PhotoSettings.Format = CameraCaptureUIPhotoFormat.Jpeg;
-            captureUI.PhotoSettings.CroppedSizeInPixels = new Size(200, 200);
-            file = await captureUI.CaptureFileAsync(CameraCaptureUIMode.Photo);
-            if (file == null)
+            FileOpenPicker openPicker = new FileOpenPicker();
+            openPicker.ViewMode = PickerViewMode.Thumbnail;
+            openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+            openPicker.FileTypeFilter.Add(".jpg");
+            openPicker.FileTypeFilter.Add(".jpeg");
+            openPicker.FileTypeFilter.Add(".png");
+
+            StorageFile file = await openPicker.PickSingleFileAsync();
+            if (file != null)
             {
-                // User cancelled photo capture
-                return;
+
+                BitmapImage source = await LoadImage(file);
+                img.Source = source;
+                // Application now has read/write access to the picked file
+
+                txtName1.Text = file.Name;
+                txtName2.Text = file.Name;
+                path.Text = file.Path;
+                createdAt.Text = file.DateCreated.ToString();
+
             }
-           
+            else
+            {
+                
+                //lỗi
+            }
         }
-        
+        public static async Task<BitmapImage> LoadImage(StorageFile file)
+        {
+            BitmapImage source = new BitmapImage();
+            FileRandomAccessStream stream = (FileRandomAccessStream)await file.OpenAsync(FileAccessMode.Read);
+
+            source.SetSource(stream);
+            return source;
+        }
+
+        private void comeBack(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DemoAppbar));
+        }
     }
 }

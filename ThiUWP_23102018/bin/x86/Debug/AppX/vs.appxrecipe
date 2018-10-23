@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-23T03:31:04.871</Modified>
+      <Modified>2018-10-23T23:24:42.072</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\ThiUWP_23102018.exe">
       <PackagePath>entrypoint\ThiUWP_23102018.exe</PackagePath>
-      <Modified>2018-10-23T03:31:04.471</Modified>
+      <Modified>2018-10-23T23:24:41.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -535,23 +535,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\ThiUWP_23102018.xr.xml">
       <PackagePath>ThiUWP_23102018.xr.xml</PackagePath>
-      <Modified>2018-10-23T03:31:04.276</Modified>
+      <Modified>2018-10-23T23:24:41.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-10-23T03:31:04.296</Modified>
+      <Modified>2018-10-23T23:24:41.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-10-23T03:31:04.296</Modified>
+      <Modified>2018-10-23T23:24:41.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\Views\DemoAppbar.xbf">
       <PackagePath>Views\DemoAppbar.xbf</PackagePath>
-      <Modified>2018-10-23T03:31:04.297</Modified>
+      <Modified>2018-10-23T23:24:41.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\Views\View_Gallery.xbf">
       <PackagePath>Views\View_Gallery.xbf</PackagePath>
-      <Modified>2018-10-23T03:31:04.298</Modified>
+      <Modified>2018-10-23T23:24:41.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -564,7 +564,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dang Dinh Si\source\repos\ThiUWP_23102018\ThiUWP_23102018\bin\x86\Debug\Core\ThiUWP_23102018.exe">
       <PackagePath>ThiUWP_23102018.exe</PackagePath>
-      <Modified>2018-10-23T03:31:04.868</Modified>
+      <Modified>2018-10-23T23:24:42.067</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
